@@ -1,0 +1,145 @@
+@import mixin
+/*
+  Base CSS
+a:focus, input:focus, textarea:focus, button:focus
+  outline: 0 solid
+a:hover
+  text-decoration: none
+img
+  max-width: 100%
+  height: auto
+h1,h2,h3,h4,h5,h6
+  margin: 0 0 15px
+  font-weight: 700
+body
+  font-family: 'Open Sans', sans-serif
+.sectionPadding
+  padding: 80px 0
+
+/*
+  Custom Css
+.productSectionTitle
+    text-align: center
+    margin: 0 0 30px 0
+    h3
+      font-size: 27px
+      font-weight: 700
+      text-transform: uppercase
+.singleProductBox
+.singleProductBg 
+  height: 330px
+  position: relative
+  background:
+    size: cover
+    position: center top
+.ticker 
+  position: absolute
+  top: 10px
+  right: 10px
+  color: #fff
+  font:
+    weight: 700
+    size: 10px
+  background: 
+    color: #333
+  height: 40px
+  width: 40px
+  line-height: 40px
+  text:
+    transform: uppercase
+    align: center
+  +borderRadius(50%)
+.tickerSale
+  background: 
+    color: #F84F4C
+.tickerNew
+  background: 
+    color: #2AB89D
+.tickerHot
+  background: 
+    color: #FFF04D
+.singleProductBg1
+  background: 
+    image: url('../img/bg1.jpg')
+.singleProductBg2
+  background: 
+    image: url('../img/bg2.jpg')
+.singleProductBg3
+  background: 
+    image: url('../img/bg3.jpg')
+.singleProductBg4
+  background: 
+    image: url('../img/bg4.jpg')
+.singleProductBg5
+  background: 
+    image: url('../img/bg5.jpg')
+.singleProductBg6
+  background: 
+    image: url('../img/bg6.jpg')
+.singleProductBoxBgHover 
+  position: absolute
+  bottom: -30px
+  background: #fff
+  width: 90%
+  transform: translateX(50%)
+  margin:
+    left: -40%
+  border:
+    right: 1px solid #EEEEEE
+  opacity: 0
+  visibility: hidden
+  transition: .5s
+  a
+    width: 32.1%
+    display: inline-block
+    padding: 10px
+    text-align: center
+    color: #333333
+    border:
+      left: 1px solid #EEEEEE
+      top: 1px solid #EEEEEE
+      bottom: 1px solid #EEEEEE
+    &:hover
+      background: 
+        color: #333333
+      color: #fff
+.singleProductBg
+  &:hover
+    .singleProductBoxBgHover 
+      bottom: 30px
+      opacity: 1
+      visibility: visible
+.productAbout 
+  text-align: center
+  margin:   
+    top: 30px
+  h4
+    font: 
+      weight: 300
+      size: 18px
+.productPrice
+  margin: 0
+  font:
+    weight: 900
+    size: 130%
+.productCarousel 
+  .owl-nav 
+    div 
+      height: 30px
+      width: 30px
+      background:
+        color: #333
+      color: #fff
+      text:
+        align: center
+      +borderRadius(50%)
+      line-height: 30px
+      opacity: .8
+      position: absolute
+      top: 50%
+      margin:
+        left: -15px
+        top: -60px
+      &.owl-next
+        left: auto
+        right: -15px
